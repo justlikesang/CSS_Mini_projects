@@ -1,0 +1,19 @@
+body {
+    color: red;
+}
+
+.special {
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+div {
+    color: greenyellow;
+}
+
+#priority {
+    color: pink;
+}
