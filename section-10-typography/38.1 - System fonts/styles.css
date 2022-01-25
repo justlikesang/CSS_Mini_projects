@@ -1,0 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap'); */
+
+
+/*
+system fonts - a font that's already installed on the device of the user.
+
+- fast load times
+- less heaches
+- project will look different
+
+"-apple-system, BlinkMacSystemFont" - system of font on apple devices
+
+"Segoe UI" - Used on Windows Systems
+"Roboto" - System Font for Android Devices
+
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
