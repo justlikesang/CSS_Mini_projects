@@ -16,8 +16,8 @@ height:auton;min-height;max-height;overflow
 .banner {
     background: red;
     /* height: calc(100vh - 6rem); */
-    /* min-height: calc(100vh - 6rem); */
-    max-height: 90vh;
+    min-height: calc(100vh - 6rem);
+    /* max-height: 90vh; */
     /* overflow: hidden;
     overflow: scroll; */
 }
