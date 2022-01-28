@@ -1,0 +1,35 @@
+/* 
+  Descendant and Child Selectors
+*/
+
+
+/* select all the divs and all the heading 1s 
+within the div */
+
+div h1 {
+    color: red;
+}
+
+
+/* selecting all the divs with the direct child
+of heading 1s within the div */
+
+div>h1 {
+    color: blue;
+}
+
+/* 
+select all the h1s within the class 'header'
+class is more specific than element selector 
+*/
+.header h1 {
+  color: green;
+}
+
+/* select all direct child of class 'header' with <h1>
+.header h1 is not anymore specific than .header > h1
+Therefore, last rule of precedence takes place
+*/
+.header > h1 {
+  color: purple;
+}
