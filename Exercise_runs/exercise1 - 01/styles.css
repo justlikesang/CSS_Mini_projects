@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    /* border: 2px solid red; */
+    width: 60vw;
+    margin: 100px auto;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+
+/* image cannot have pseudo elements */
+
+div::before {
+    content: '';
+    border: 15px solid red;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: -40px;
+    top: -40px;
+    z-index: -3;
+    transition: all 0.3s linear;
+}
+
+div::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(235, 152, 212, 0.5);
+    left: -20px;
+    top: -20px;
+    z-index: -2;
+    transition: all 0.3s linear;
+}
+
+div:hover:before,
+div:hover:after {
+    top: 0px;
+    left: 0px;
+}
