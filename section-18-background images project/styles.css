@@ -13,6 +13,9 @@ body {
     height: 5rem;
     background: #222;
     padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .nav-title {
@@ -32,11 +35,21 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to right, rgba(105, 62, 27, 0.5), rgba(105, 62, 27, 1)), url('../images/coffee.jpeg') center/cover;
+    background: rgb(74, 33, 2);
     min-height: calc(100vh - 5rem);
-    background-repeat: none;
-    /* background-size: cover; */
 }
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background: linear-gradient(to right, rgba(105, 62, 27, 0.5), rgba(105, 62, 27, 1)), url('../images/coffee.jpeg') center/cover;
+    }
+}
+
+
+/* since hero center has its own width and height
+even if we change the position to absolute, top & left 50%
+it'll look like it is not (cornered towards lower right side)
+*/
 
 .hero-center {
     width: 90vw;
@@ -44,6 +57,12 @@ body {
     margin: 0 auto;
     padding: 5rem 0;
     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    text-align: center;
 }
 
 .hero-center h1 {
@@ -53,8 +72,9 @@ body {
 }
 
 .hero-center p {
-    margin-bottom: 1.5rem;
     max-width: 35em;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
 .hero-btn {
@@ -64,4 +84,11 @@ body {
     padding: 0.75rem 1.25rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    outline: 2px solid #fff;
+    outline-offset: 5px;
+}
+
+.temp {
+    min-height: 100vh;
+    background: red;
 }
