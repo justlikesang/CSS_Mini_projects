@@ -9,18 +9,16 @@ div {
 }
 
 .one {
-    border: 2px solid blue;
     background: red;
-    transform: scaleX(0.5);
+    transform: skewX(40deg);
 }
 
 .two {
     background: blue;
-    transform: scaleY(1.5);
+    transform: skewY(40deg);
 }
 
 .three {
     background: green;
-    transform: scale(1.2, 1.5);
-    transform: scale(2, 1.5);
+    transform: skew(40deg, 30deg);
 }
