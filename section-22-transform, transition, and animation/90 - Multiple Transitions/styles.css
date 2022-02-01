@@ -24,6 +24,10 @@ div:hover {
 
 .three {
     background: green;
-    transition-property: background;
-    transition-duration: 4s;
+    transition-property: background, border-radius;
+    transition-duration: 4s, 2s;
+}
+
+.three:hover {
+    border-radius: 50%;
 }

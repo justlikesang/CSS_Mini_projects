@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  border: 2px solid red;
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+}
+
+.hero-center {
+  width: 60vw;
+  max-width: 790px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
