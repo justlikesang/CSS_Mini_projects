@@ -1,0 +1,22 @@
+/*
+text-shadow
+box-shadow
+*/
+
+h1 {
+    text-shadow: 5px 0px 0px red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: 20px;
+    box-shadow: 3px 5px 5px green;
+    transition: all 2s ease-in-out;
+}
+
+.box:hover {
+    -webkit-box-shadow: 5px 13px 10px 1px #000000;
+    box-shadow: 5px 13px 10px 1px #000000;
+}
