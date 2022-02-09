@@ -8,10 +8,17 @@
   <title>Flexbox Tutorial</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* flex-shrink all children have flex-shrink:1 */
+
     .container {
-      height: 300px;
       display: flex;
+      flex-wrap: wrap;
     }
+    .box-2 {
+      width: 300px;
+      flex-shrink: 0;
+    }
+
   </style>
 </head>
 
@@ -30,7 +37,7 @@
     <div class="box generic">G</div>
     <div class="box generic">G</div> -->
   </div>
-  <a href="banner.html">banner html</a>
+
 </body>
 
 </html>

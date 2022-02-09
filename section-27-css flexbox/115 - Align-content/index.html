@@ -8,9 +8,19 @@
   <title>Flexbox Tutorial</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* align-content */
+    /* stretch(default) flex-end flex-start space-around 
+    space-between center */
     .container {
       height: 300px;
       display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+      align-content: flex-end;
+      align-content: flex-start;
+      align-content: center;
+      align-content: space-around;
+      align-content: space-between;
     }
   </style>
 </head>
@@ -24,13 +34,13 @@
     <div class="box box-3">3</div>
     <div class="box box-4">4</div>
     <div class="box box-5">5</div>
-    <!-- <div class="box generic">G</div>
     <div class="box generic">G</div>
     <div class="box generic">G</div>
     <div class="box generic">G</div>
-    <div class="box generic">G</div> -->
+    <div class="box generic">G</div>
+    <div class="box generic">G</div>
   </div>
-  <a href="banner.html">banner html</a>
+
 </body>
 
 </html>
